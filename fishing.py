@@ -68,8 +68,7 @@ while(True):
     if(lastImg == image):
         continue
 
-    #api.update_with_media(image, line)
-    print(image, line)
+    api.update_with_media(image, line)
     lastImg = image
 
     time.sleep(3600)
