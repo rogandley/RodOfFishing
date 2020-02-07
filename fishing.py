@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import tweepy, time, random, os
+from boto.s3.connection import S3Connection
 
 #enter the corresponding information from your Twitter application:
 #CONSUMER_KEY = keys.consumerK#keep the quotes, replace this with your consumer key
 #CONSUMER_SECRET = keys.consumerS#keep the quotes, replace this with your consumer secret key
 #ACCESS_KEY = keys.accessK#keep the quotes, replace this with your access token
 #ACCESS_SECRET = keys.accessS#keep the quotes, replace this with your access token secret
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+auth = tweepy.OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
+auth.set_access_token(os.environ['ACCESS_KEY'], os.environ['ACCESS_SECRET'])
 api = tweepy.API(auth)
 lastImg = ''
 
