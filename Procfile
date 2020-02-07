@@ -1,1 +1,1 @@
-web: python fishing.py
+tweet: python fishing.py
