@@ -1,1 +1,1 @@
-tweet: python fishing.py
+free: python fishing.py
