@@ -1,1 +1,1 @@
-worker: python fishing.py
+web: python server.py
