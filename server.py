@@ -1,6 +1,5 @@
 from os import environ
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask("fishing.py")
 app.run(host= '0.0.0.0', port=environ.get('PORT'))
-exec(open("fishing.py").read())
