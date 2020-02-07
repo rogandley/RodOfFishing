@@ -1,1 +1,1 @@
-web:python fishing.py
+web:gunicorn fishing.py
