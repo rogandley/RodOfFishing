@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import tweepy, time, random, os, keys
+import tweepy, time, random, os
 
 #enter the corresponding information from your Twitter application:
 #CONSUMER_KEY = keys.consumerK#keep the quotes, replace this with your consumer key
