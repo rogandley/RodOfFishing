@@ -1,1 +1,1 @@
-tweet: python fishing.py
+worker: python fishing.py
