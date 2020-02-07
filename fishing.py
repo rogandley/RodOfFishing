@@ -17,53 +17,53 @@ lastImg = ''
 while(True):
     value = random.random()
     if(value > .9):
-        filename = "Resources\\missedlines.txt"
-        image = "Resources\\Red_Onion.png"
+        filename = "Resources/missedlines.txt"
+        image = "Resources/Red_Onion.png"
         line = random.choice([line for line in open(filename)])
     elif(value > .87):
-        filename = 'Resources\\Chaos'
-        fish = filename + "\\" + random.choice(os.listdir(filename))
+        filename = 'Resources/Chaos'
+        fish = filename + "/" + random.choice(os.listdir(filename))
         for file in os.listdir(fish):
             if file.endswith(".txt"):
-                lines = fish + "\\" + file
+                lines = fish + "/" + file
             else:
-                image = fish + "\\" + file
+                image = fish + "/" + file
         line = random.choice([line for line in open(lines)])
     elif(value > .75):
-        filename = 'Resources\\Styx'
-        fish = filename + "\\" + random.choice(os.listdir(filename))
+        filename = 'Resources/Styx'
+        fish = filename + "/" + random.choice(os.listdir(filename))
         for file in os.listdir(fish):
             if file.endswith(".txt"):
-                lines = fish + "\\" + file
+                lines = fish + "/" + file
             else:
-                image = fish + "\\" + file
+                image = fish + "/" + file
         line = random.choice([line for line in open(lines)])
     elif(value > .525):
-        filename = 'Resources\\Elysium'
-        fish = filename + "\\" + random.choice(os.listdir(filename))
+        filename = 'Resources/Elysium'
+        fish = filename + "/" + random.choice(os.listdir(filename))
         for file in os.listdir(fish):
             if file.endswith(".txt"):
-                lines = fish + "\\" + file
+                lines = fish + "/" + file
             else:
-                image = fish + "\\" + file
+                image = fish + "/" + file
         line = random.choice([line for line in open(lines)])
     elif(value > .275):
-        filename = 'Resources\\Asphodel'
-        fish = filename + "\\" + random.choice(os.listdir(filename))
+        filename = 'Resources/Asphodel'
+        fish = filename + "/" + random.choice(os.listdir(filename))
         for file in os.listdir(fish):
             if file.endswith(".txt"):
-                lines = fish + "\\" + file
+                lines = fish + "/" + file
             else:
-                image = fish + "\\" + file
+                image = fish + "/" + file
         line = random.choice([line for line in open(lines)])
     else:
-        filename = 'Resources\\Tartarus'
-        fish = filename + "\\" + random.choice(os.listdir(filename))
+        filename = 'Resources/Tartarus'
+        fish = filename + "/" + random.choice(os.listdir(filename))
         for file in os.listdir(fish):
             if file.endswith(".txt"):
-                lines = fish + "\\" + file
+                lines = fish + "/" + file
             else:
-                image = fish + "\\" + file
+                image = fish + "/" + file
         line = random.choice([line for line in open(lines)])
 
     if(lastImg == image):
